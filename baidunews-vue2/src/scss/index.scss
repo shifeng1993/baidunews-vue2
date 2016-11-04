@@ -1,0 +1,514 @@
+/*全局样式开始*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    font-family: arial;
+    vertical-align: baseline;
+}
+
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.top-left-baidu,
+.top-left-userhome,
+.top-right-search,
+.top-right-subscribe {
+    border: 0;
+    background-image: url(../img/bg-new-toolbar_6e9bc53.png);
+    background-size: 40px 500px;
+    -webkit-background-size: 40px 500px;
+    background-repeat: no-repeat;
+}
+
+
+/*全局样式结束*/
+
+
+/*头部样式开始*/
+
+.top {
+    position: relative;
+    min-width: 320px;
+    height: 44px;
+    z-index: 2;
+    background-color: #3e98f0;
+    text-align: center;
+    font-weight: 400;
+    color: #fff;
+    background-image: url(../img/bg-news-logo_344ce44.png);
+    background-repeat: no-repeat;
+    background-position: center 6px;
+    background-size: 77px auto;
+    -webkit-background-size: 77px auto;
+}
+
+.top a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.top-left,
+.top-right {
+    position: absolute;
+    height: 100%;
+    overflow: hidden;
+}
+
+.top-left {
+    top: 0;
+    left: 0;
+}
+
+.top-left-baidu {
+    width: 34px;
+    height: 100%;
+    font-size: 15px;
+    line-height: 44px;
+    background-position: center 4px;
+    float: left;
+}
+
+.top-left-userhome {
+    width: 34px;
+    height: 100%;
+    font-size: 15px;
+    line-height: 44px;
+    background-position: center -463px;
+    margin-left: 10px;
+    float: left;
+}
+
+.top-right {
+    top: 0;
+    right: 0;
+}
+
+.top-right-search {
+    width: 34px;
+    height: 100%;
+    font-size: 15px;
+    line-height: 44px;
+    background-position: center -162px;
+    margin-right: 10px;
+    float: left;
+}
+
+.top-right-subscribe {
+    width: 34px;
+    height: 100%;
+    font-size: 15px;
+    line-height: 44px;
+    background-position: center -107px;
+    float: left;
+}
+
+nav {
+    position: relative;
+    background-color: #3e98f0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    z-index: 2;
+    color: #fff;
+}
+
+.nav-line {
+    height: 1px;
+    margin: 0 10px;
+    background-color: #5dabf0;
+}
+
+nav .content {
+    padding-top: 3px;
+    padding-bottom: 5px;
+}
+
+nav .content table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+nav .content tr:first-child,
+nav .content tr:first-child td {
+    border-top: 0;
+}
+
+nav .content tr:last-child,
+nav .content tr:last-child td,
+nav .content tr.last-shown-line,
+nav .content tr.last-shown-line td {
+    border-bottom: 0;
+}
+
+nav .content td {
+    height: 33px;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 400;
+    text-align: center;
+}
+
+nav .content td>div {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+nav .content td b {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    height: 12px;
+    width: 1px;
+    display: block;
+    overflow-y: hidden;
+    background-color: #5dabf0;
+}
+
+nav .content tr td:first-child b {
+    left: -1px;
+}
+
+.cur {
+    border-bottom: 1px solid #fff!important;
+    margin: 0 2px!important;
+}
+
+nav .content td span {
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+    color: #fff;
+    white-space: nowrap;
+    margin: 0 2px;
+}
+
+nav .more {
+    position: absolute;
+    left: 1px;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    overflow-y: hidden;
+    background-color: #3e98f0;
+    color: #fff;
+    text-align: center;
+}
+
+nav .more .down-triangle {
+    display: inline-block;
+    position: absolute;
+    right: 2px;
+    top: 14px;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #fff;
+}
+
+footer {
+    position: relative;
+    height: 41px;
+    border-bottom: 0 inset #bbc2ce;
+    background-color: #3e98f0;
+    font-size: 15px;
+    line-height: 32px;
+    text-align: center;
+}
+
+footer .btn-group {
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    bottom: 6px;
+}
+
+footer .reporter-rank {
+    float: left;
+    padding-right: 10px;
+    text-align: left;
+}
+
+footer .media-rank {
+    position: relative;
+    margin-left: 10px;
+    float: left;
+    padding-right: 10px;
+    text-align: left;
+}
+
+footer .media-rank b,
+footer .manage-subscribe b {
+    display: block;
+    position: absolute;
+    top: 9px;
+    left: -11px;
+    height: 12px;
+    width: 1px;
+    background-color: #5dabf0;
+}
+
+footer .manage-subscribe {
+    position: relative;
+    width: 96px;
+    margin-left: 10px;
+    float: left;
+    padding-right: 10px;
+    text-align: left;
+}
+
+footer .less {
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    bottom: 6px;
+    width: 52px;
+    padding-right: 4px;
+    color: #fff;
+}
+
+footer .less-icon {
+    display: inline-block;
+    position: absolute;
+    right: 4px;
+    top: 14px;
+    width: 0;
+    height: 0;
+    border-bottom: 4px solid #fff;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+}
+
+article {
+    position: relative;
+    z-index: 1;
+    top: -2px;
+    min-height: 800px;
+}
+
+#article {
+    position: relative;
+    margin-top: -1px;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+}
+
+#article .banner {
+    background: url(../img/carousel_bg.png);
+    background-size: 100px 100px;
+    -webkit-background-size: 100px 100px;
+    position: relative;
+    z-index: 1;
+    margin: 10px 10px 0;
+    overflow: hidden;
+}
+
+#article .banner-box {
+    height: 246px;
+    margin-bottom: 7px;
+    display: -webkit-box;
+    -webkit-box-lines: multiple;
+    -webkit-backface-visibility: hidden;
+    width: 4000px;
+}
+
+.banner-box-item {
+    width: 100%;
+}
+
+.banner-box-innerbox {
+    margin-right: 10px;
+    position: relative;
+}
+
+.banner-imagebox {
+    overflow: hidden;
+    height: 246px;
+}
+
+.banner-box-item:nth-child(2n) {
+    padding-right: 0;
+}
+
+.banner-imagebox img {
+    width: 100%;
+    height: inherit;
+    min-height: 187px;
+    vertical-align: middle;
+}
+
+#article .g-icons {
+    font-size: 0;
+    text-align: center;
+    height: 3px;
+    background-color: #B8BBC0;
+    z-index: 1;
+    display: -webkit-box;
+    margin-right: 10px;
+}
+
+.g-icons-active {
+    background-color: #3e98f0!important;
+}
+
+.list {
+    width: 100%;
+    background-color: #fff;
+}
+
+.list-item {
+    position: relative;
+    border-bottom: 1px solid #f6f6f6;
+    overflow: hidden;
+    padding: 10px 0;
+    margin: 0 10px;
+}
+
+.item-img {
+    font-size: 0;
+    height: 68px;
+    vertical-align: middle;
+    width: 95px;
+    text-align: center;
+    overflow: hidden;
+    border: 1px solid #e8e8e8;
+    float: left;
+    margin-left: 0;
+    margin-right: 10px;
+    background-color: #F4F7F9;
+    position: relative;
+}
+
+.item-img img {
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.item-title {
+    height: 40px;
+    max-height: 40px;
+    overflow: hidden;
+}
+
+.item-title .title {
+    font-size: 16px;
+    line-height: 20px;
+    color: #262b31;
+    margin: -1px 0 4px 0;
+}
+
+.item-title .desc {
+    font-size: 13px;
+    line-height: 20px;
+    color: #b8bac0;
+    font-weight: 400;
+}
+
+.item-time {
+    margin-top: 10px;
+    line-height: 20px;
+    text-align: left;
+    font-size: 12px;
+    color: #b8bac0;
+    font-weight: 400;
+}
