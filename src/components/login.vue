@@ -1,19 +1,14 @@
 <template>
 <!-- container start -->
-<div class="container-fluid">
-我是login
+<div class="container-fluid" id="login">
+  <LoginLogo></LoginLogo>
+  <LoginModal></LoginModal>
 </div>
-<!-- container end -->
 </template>
 
 <script>
-import AdminHeader from './admin-header'
-import AdminArticle from './admin-article'
-import AdminNav from './admin-nav'
-import AdminFooter from './admin-footer'
-import AdminMask from './admin-mask'
-import AdminAddbox from './admin-addbox'
-import AdminUpdatebox from './admin-updatebox'
+import LoginLogo from './login-logo'
+import LoginModal from './login-modal'
 
 export default {
   name: 'login',
@@ -23,40 +18,41 @@ export default {
     }
   },
   components: {
-    AdminHeader,
-    AdminArticle,
-    AdminNav,
-    AdminFooter,
-    AdminMask,
-    AdminAddbox,
-    AdminUpdatebox}
+    LoginLogo,
+    LoginModal
+  }
 }
-
 </script>
 
-
-
-<style lang="scss">
-
-//以下是全局样式
-* {
-    font-family: 微软雅黑;
-}
-
-.center {
-    margin: 0 auto;
-    text-align: center;
-}
-
-a {
-    color: #000;
-}
-a:hover {
-    color: #5dabf0;
+<style lang="scss" scoped>
+body {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .container-fluid {
-    margin: 0;
-    padding: 0;
+    background: url("../../static/img/background.jpg") no-repeat center center fixed;
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width:320px) {
+    .logo {
+        top: 3%;
+    }
+    .modal {
+        top: 23%!important;
+        width: 95%;
+    }
+    body {
+        font-size: 12px!important;
+    }
+    .modal-header {
+        padding: 2px !important;
+    }
+    .modal-body {
+        padding: 0 !important;
+    }
 }
 </style>

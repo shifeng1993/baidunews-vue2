@@ -1,5 +1,5 @@
 <template>
-<div class="mask">
+<div class="mask" v-show="maskshow">
 </div>
 </template>
 
@@ -8,7 +8,7 @@ export default {
   name: 'mask',
   data () {
     return {
-      msg: 'Hello Vue!'
+      maskshow: false
     }
   }
 }
@@ -18,6 +18,8 @@ export default {
 
 <style lang="scss">
 .mask {
+    width: 100%;
+    height: 100%;
     background-color: gray;
     left: 0;
     opacity: 0.5;

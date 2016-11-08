@@ -37,7 +37,7 @@ export default {
 
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 //以下是全局样式
 * {
     font-family: 微软雅黑;

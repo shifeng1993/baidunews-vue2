@@ -1,14 +1,12 @@
 <template>
-<!-- container start -->
-<div class="container-fluid">
-<h1>我是index</h1>
-
+<div id="container">
+  <IndexHeader></IndexHeader>
+  <IndexArticle></IndexArticle>
 </div>
-<!-- container end -->
 </template>
-
 <script>
-import AdminHeader from './admin-header'
+import IndexHeader from './index-header'
+import IndexArticle from './index-article'
 export default {
   name: 'Admin',
   data () {
@@ -17,11 +15,10 @@ export default {
     }
   },
   components: {
-    AdminHeader}
+    IndexHeader,
+    IndexArticle
+  }
 }
-
 </script>
 
-<style lang="scss">
-// @import "../scss/index.scss";
-</style>
+<style lang="scss" scoped>@import "../scss/index.scss";</style>

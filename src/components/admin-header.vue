@@ -4,8 +4,9 @@
   <div class="logo">
     <p>百度新闻demo后台</p>
   </div>
-  <div id="headernav" @click="headernav">
+  <div id="headernav" @click="headerNav">
   </div>
+  <button type="button" name="exit" class="exit fr">退出</button>
 </header>
 <!-- head end -->
 </template>
@@ -16,6 +17,11 @@ export default {
   data () {
     return {
       msg: 'Hello Vue!'
+    }
+  },
+  methods: {
+    headerNav: function () {
+
     }
   }
 }
@@ -35,11 +41,19 @@ header {
     border-bottom: 2px #5dabf0 solid;
     .logo {
         float: left;
-        padding: 0px 30px;
+        padding: 15px 30px;
         p {
             font-family: 微软雅黑;
-            font-size: 24px;
+            font-size: 28px;
         }
+    }
+    .exit{
+      border: 1px solid #fff;
+      border-radius: 5px;
+      margin-right: 15px;
+      padding: 5px 10px;
+      margin-top:15px;
+      background: #fff
     }
     .user {
         float: right;
